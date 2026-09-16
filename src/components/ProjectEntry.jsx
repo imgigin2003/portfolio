@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Suspense } from "react";
 import { previews } from "./previews";
 
 export default function ProjectEntry({ project, flip }) {
@@ -18,7 +19,13 @@ export default function ProjectEntry({ project, flip }) {
               {project.id}.app
             </span>
           </div>
-          <div className="overflow-hidden">{Preview ? <Preview /> : null}</div>
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl md:aspect-[4/3] bg-card/50">
+            {Preview && (
+              <Suspense fallback={<div className="h-full w-full animate-pulse bg-muted/20" />}>
+                <Preview />
+              </Suspense>
+            )}
+          </div>
         </div>
       </div>
 

@@ -1,14 +1,9 @@
-import AffectCarePreview from "./AffectCarePreview";
-import FraudFluxPreview from "./FraudFluxPreview";
-import LumenPreview from "./LumenPreview";
-import StudySproutPreview from "./StudySproutPreview";
-import InsightGraphPreview from "./InsightGraphPreview";
+import { lazy } from 'react';
 
-// Live, hand-built UI previews rendered inside the project window frame.
 export const previews = {
-  affectcare: AffectCarePreview,
-  fraudflux: FraudFluxPreview,
-  lumen: LumenPreview,
-  studysprout: StudySproutPreview,
-  insightgraph: InsightGraphPreview,
+  affectcare: lazy(() => import('./AffectCarePreview')),
+  fraudflux: lazy(() => import('./FraudFluxPreview')),
+  lumen: lazy(() => import('./LumenPreview')),
+  studysprout: lazy(() => import('./StudySproutPreview')),
+  insightgraph: lazy(() => import('./InsightGraphPreview')),
 };
