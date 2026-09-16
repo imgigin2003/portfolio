@@ -29,30 +29,30 @@ function useTypewriter(words, reduce) {
 }
 
 const Code = () => (
-  <pre className="overflow-x-auto p-5 font-mono text-[12px] leading-relaxed md:text-[13px]">
-    <code className="text-muted-foreground">
-      <span className="text-muted-foreground/60">{"// building reliable AI systems"}</span>
+  <pre className="overflow-x-auto p-5 font-mono text-[12px] leading-relaxed md:text-[13px] bg-[#FCF8F8] dark:bg-[#272822]">
+    <code className="text-[#4B3B3D] dark:text-[#FCF8F8]">
+      <span className="text-[#9A7B82] dark:text-[#B8A0A6]">{"// building reliable AI systems"}</span>
       {"\n"}
-      <span className="text-sage">const</span> <span className="text-foreground">negin</span> <span className="text-muted-foreground">=</span> <span className="text-muted-foreground">{"{"}</span>
+      <span className="text-[#C76E76] dark:text-[#F5AFAF]">const</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">negin</span> <span className="text-[#C76E76] dark:text-[#F5AFAF]">=</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">{"{"}</span>
       {"\n  "}
-      <span className="text-sage">role</span><span className="text-muted-foreground">:</span> <span className="text-[hsl(var(--violet))]">"AI / Backend Engineer"</span><span className="text-muted-foreground">,</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">role</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#8B6268] dark:text-[#FBEFEF]">"AI / Backend Engineer"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>
       {"\n  "}
-      <span className="text-sage">focus</span><span className="text-muted-foreground">:</span> <span className="text-muted-foreground">[</span>
-      <span className="text-[hsl(var(--violet))]">"ML"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"LLM eng"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"reliable systems"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"API Design"</span><span className="text-muted-foreground">],</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">focus</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">[</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"ML"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"LLM eng"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"reliable systems"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"API Design"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">],</span>
       {"\n  "}
-      <span className="text-sage">stack</span><span className="text-muted-foreground">:</span> <span className="text-muted-foreground">[</span>
-      <span className="text-[hsl(var(--violet))]">"Node"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"Express"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"FastAPI"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"ScikitLearn"</span><span className="text-muted-foreground">,</span>{" "}
-      <span className="text-[hsl(var(--violet))]">"PyTorch"</span><span className="text-muted-foreground">],</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">stack</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">[</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"Node"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"Express"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"FastAPI"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"ScikitLearn"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"PyTorch"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">],</span>
       {"\n  "}
-      <span className="text-sage">shipping</span><span className="text-muted-foreground">:</span> <span className="text-sage">true</span><span className="text-muted-foreground">,</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">shipping</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#8F70A5] dark:text-[#C5B3D3]">true</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>
       {"\n"}
-      <span className="text-muted-foreground">{"};"}</span>
+      <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">{"};"}</span>
     </code>
   </pre>
 );
@@ -146,12 +146,12 @@ export default function Hero() {
               aria-hidden="true"
               className="pointer-events-none absolute -inset-4 rounded-3xl bg-[hsl(var(--sage))] opacity-10 blur-2xl"
             />
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
-              <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+            <div className="relative overflow-hidden rounded-2xl border border-border bg-[#FCF8F8] dark:bg-[#272822] shadow-2xl">
+              <div className="flex items-center gap-2 border-b border-border/50 px-4 py-3">
                 <span className="h-3 w-3 rounded-full bg-[hsl(0_84%_60%)]" />
                 <span className="h-3 w-3 rounded-full bg-[hsl(38_92%_50%)]" />
                 <span className="h-3 w-3 rounded-full bg-[hsl(120_60%_50%)]" />
-                <span className="ml-3 font-mono text-xs text-muted-foreground">negin.ts</span>
+                <span className="ml-3 font-mono text-xs text-[#8F7478] dark:text-[#CDBBBC]">negin.ts</span>
               </div>
               <Code />
             </div>
