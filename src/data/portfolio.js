@@ -67,7 +67,6 @@ export const projects = [
       "Fraud detection pipeline with a live transaction scoring stream, evaluated on 284,807 real transactions under severe class imbalance.",
     metrics: [{ value: "284,807", label: "Transactions evaluated" }],
     tech: ["Python", "scikit-learn", "Machine Learning", "Imbalanced Data"],
-    link: "https://github.com/imgigin2003/FraudFlux#-the-problem-with-recall-over-precision-always",
     github: "https://github.com/imgigin2003/FraudFlux",
   },
   {
