@@ -19,7 +19,7 @@ export default function ProjectEntry({ project, flip }) {
               {project.id}.app
             </span>
           </div>
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl md:aspect-[4/3] bg-card/50">
+          <div className="relative w-full overflow-hidden rounded-2xl bg-card/50">
             {Preview && (
               <Suspense fallback={<div className="h-full w-full animate-pulse bg-muted/20" />}>
                 <Preview />
