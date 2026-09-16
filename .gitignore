@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+backend/.env
+
+# Editor directories and files
+.vscode
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+backend/.env
+backend/mongoose-types.d.ts
+.env
+
+# Native app build artifacts
+# Tauri (Rust) build output — keep source, ignore compiled artifacts
+frontend/src-tauri/target
+frontend/src-tauri/gen
+
+# Capacitor / iOS build artifacts
+frontend/ios/App/Pods
+frontend/ios/App/App/public
+frontend/ios/App/build
+frontend/ios/App/DerivedData
+frontend/ios/.gradle
+
+# Capacitor / Android build artifacts
+frontend/android/.gradle
+frontend/android/app/build
+frontend/android/build
+frontend/android/local.properties
+frontend/android/app/src/main/assets/public
+

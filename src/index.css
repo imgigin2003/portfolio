@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  ----------------------------------------------------------------------------
+  BRAND FONTS
+  Add @font-face rules for the real families here when available; the --font-*
+  tokens pick them up automatically. Web fallbacks load via <link> in index.html.
+
+  @font-face { font-family: 'Rainbow After Rain Sans'; src: url('/fonts/rainbow-after-rain-sans.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: 'Farmhouse 16';           src: url('/fonts/farmhouse-16.woff2') format('woff2'); font-weight: 400 700; font-display: swap; }
+  @font-face { font-family: 'PaperNotes';            src: url('/fonts/papernotes.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+  @font-face { font-family: 'Garden House Signature'; src: url('/fonts/garden-house-signature.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+  ----------------------------------------------------------------------------
+*/
+
+@layer base {
+  /* ---- LIGHT: "Purple to White" (#391053 #5a2675 #9d72b3 #c9a8f1 #ffffff) ---- */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 277 68% 19%;          /* #391053 deep purple */
+    --muted-foreground: 279 30% 45%;
+    --border: 276 45% 92%;
+    --sage: 279 72% 39%;                /* #7A1CAC main accent */
+    --violet: 279 72% 58%;             /* #AD49E1 secondary accent */
+    --ring: 279 72% 39%;
+
+    --card: 276 60% 99%;
+    --card-foreground: 277 68% 19%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 277 68% 19%;
+    --primary: 277 68% 19%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 276 55% 95%;
+    --secondary-foreground: 277 68% 19%;
+    --muted: 276 50% 96%;
+    --accent: 279 72% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --input: 276 45% 92%;
+
+    --font-display: 'Rainbow After Rain Sans', 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Farmhouse 16', 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-hand: 'PaperNotes', 'Caveat', cursive;
+    --font-signature: 'Garden House Signature', 'Caveat', cursive;
+    --font-mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+    --radius: 0.6rem;
+
+    --chart-1: 279 72% 58%;
+    --chart-2: 279 72% 39%;
+    --chart-3: 280 30% 57%;
+    --chart-4: 267 72% 80%;
+    --chart-5: 277 68% 19%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 277 68% 19%;
+    --sidebar-primary: 279 72% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 276 55% 95%;
+    --sidebar-accent-foreground: 277 68% 19%;
+    --sidebar-border: 276 45% 92%;
+    --sidebar-ring: 279 72% 39%;
+  }
+
+  /* ---- DARK: ColorHunt purple (#2E073F #7A1CAC #AD49E1 #EBD3F8) ---- */
+  .dark {
+    --background: 0 0% 0%;              /* black */
+    --foreground: 280 60% 96%;         /* near-white, faint lavender */
+    --muted-foreground: 279 40% 70%;   /* purple-pinkish muted */
+    --border: 280 40% 20%;
+    --sage: 279 72% 58%;                /* #AD49E1 purple-pink accent */
+    --violet: 279 72% 39%;             /* #7A1CAC deep purple */
+    --ring: 279 72% 58%;
+
+    --card: 280 45% 9%;
+    --card-foreground: 280 60% 96%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 280 60% 96%;
+    --primary: 279 72% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 280 40% 14%;
+    --secondary-foreground: 280 60% 96%;
+    --muted: 280 40% 12%;
+    --accent: 279 72% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --input: 280 40% 18%;
+
+    --chart-1: 279 72% 58%;
+    --chart-2: 279 72% 39%;
+    --chart-3: 279 40% 70%;
+    --chart-4: 267 72% 80%;
+    --chart-5: 280 60% 96%;
+
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 280 60% 96%;
+    --sidebar-primary: 279 72% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 280 40% 14%;
+    --sidebar-accent-foreground: 280 60% 96%;
+    --sidebar-border: 280 40% 20%;
+    --sidebar-ring: 279 72% 58%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+  }
+
+  ::selection {
+    background: hsl(var(--sage));
+    color: hsl(var(--background));
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--sage));
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #ffffff !important; }
+  .cv-page,
+  .cv-page * { color: #000000 !important; box-shadow: none !important; }
+  .cv-page a { text-decoration: none !important; }
+  .cv-page { padding-top: 0 !important; padding-bottom: 0 !important; }
+}
