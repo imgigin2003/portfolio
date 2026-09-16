@@ -42,7 +42,18 @@
     <title>Negin Parseh — AI Engineer & Backend Developer</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        .initial-loader { display: flex; height: 100vh; width: 100vw; align-items: center; justify-content: center; background-color: #272822; }
+        .initial-loader-spinner { width: 32px; height: 32px; border: 3px solid rgba(197, 179, 211, 0.2); border-top-color: #C5B3D3; border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        html:not(.dark) .initial-loader { background-color: #FCF8F8; }
+        html:not(.dark) .initial-loader-spinner { border-color: rgba(143, 112, 165, 0.2); border-top-color: #8F70A5; }
+      </style>
+      <div class="initial-loader">
+        <div class="initial-loader-spinner"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

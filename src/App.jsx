@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
 import { lazy, Suspense } from 'react';
+import Home from './pages/Home';
 
-const Home = lazy(() => import('./pages/Home'));
 const CV = lazy(() => import('./pages/CV'));
 
 function App() {
