@@ -18,6 +18,7 @@ export const about = {
   statement:
     "I started out in full-stack development, but I've naturally gravitated toward AI engineering and backend systems. I really enjoy working on the infrastructure that makes smart models actually usable.",
   body: "Most of my time is spent on machine learning, LLMs, and the backend architecture needed to run AI reliably in production. For me, a good system isn't just about high accuracy on a test set—it's about being robust under real conditions and honest about its own limits.",
+  cvSummary: "Backend Developer with 3 years of experience building production-ready systems in Python and Node.js, and 6 months of applied machine learning experience. Experienced in owning backend infrastructure from requirements through deployment. Built a FastAPI algorithm visualizer, a CNN+LSTM audio classification system achieving 88.75% recall, and a fraud detection pipeline evaluated on 284K+ real transactions. Core expertise includes Python, FastAPI, Node.js, Machine Learning, and end-to-end reliable delivery.",
   interests: [
     "Machine learning",
     "Deep learning",
@@ -26,6 +27,19 @@ export const about = {
     "API design",
   ],
 };
+
+export const education = [
+  {
+    degree: "B.Sc. in Software Engineering",
+    school: "Technical and Vocational University (TVU) of Kermanshah, Iran",
+    date: "November 2025"
+  },
+  {
+    degree: "Associate Degree in Computer Software Engineering",
+    school: "Technical and Vocational University (TVU) of Kermanshah, Iran",
+    date: "October 2023"
+  }
+];
 
 export const projects = [
   {
@@ -59,10 +73,10 @@ export const projects = [
   {
     id: "lumen",
     index: "03",
-    name: "Lumen",
+    name: "LumenRetreat",
     year: "2025",
     status: "Completed",
-    subtitle: "Retreat management dashboard",
+    subtitle: "hotel management dashboard",
     summary:
       "Full-stack dashboard for managing a retreat — bookings, cabins, guests, revenue, and occupancy in a single view.",
     metrics: [],
@@ -106,7 +120,11 @@ export const experience = [
     company: "Daneshboom",
     period: "Aug 2026 — Present",
     type: "Full-time · Remote",
-    description: "",
+    description: [
+      "Designing and implementing a production-oriented AI backend with multi-provider LLM routing, automatic failover, provider health management, and quota-aware request handling.",
+      "Built a provider abstraction layer supporting cloud and self-hosted models through a unified AI gateway.",
+      "Implemented idempotent request handling, structured-output validation, bounded retries, and normalized provider error handling."
+    ],
   },
   {
     role: "AI/ML Engineer — Volleyball Serve Analysis",
@@ -121,22 +139,30 @@ export const experience = [
     company: "Independent",
     period: "Jan 2025 — Present",
     type: "Freelance",
-    description:
-      "Delivering full-stack applications end-to-end — React, TypeScript, Python and Node.js — from requirements through testing and deployment. Built AffectCare, FraudFlux, and supporting production interfaces.",
+    description: [
+      "Developed AffectCare — a CNN+LSTM audio classification system using MFCC spectrogram features, achieving 88.75% recall and 77.6% F1 through evaluation-driven model selection.",
+      "Developed FraudFlux — a fraud detection pipeline on 284,807 real transactions, comparing models under severe class imbalance and selecting a deployment-oriented model based on precision/recall trade-offs.",
+      "Created StudySprout and Lumen Retreat — full-stack applications featuring authentication, dashboards, CRUD workflows, and responsive production-ready interfaces.",
+      "Built InsightGraph — a full-stack algorithm visualizer using React and FastAPI with step-by-step execution, comparison mode, 16 algorithms, reusable components, and 34 automated tests."
+    ],
   },
   {
     role: "Software Engineer",
     company: "Private SaaS Company",
     period: "Sep 2023 — Jan 2025",
     type: "Full-time · Remote",
-    description:
-      "Remote, end-to-end delivery across React frontends and Python backends under real traffic. Contributed to internal platforms including a hypergraph visualization tool with a Rust performance bridge.",
+    description: [
+      "Collaborated in a fully remote environment, independently delivering software features while coordinating with teammates on data migration and cross-feature development.",
+      "Owned end-to-end delivery across React frontends and Python backends from requirement clarification through testing and production deployment under real traffic.",
+      "Built and maintained React interfaces and backend services with focus on performance, reusable architecture, clean APIs, and reliability.",
+      "Contributed to internal platforms including KnowledgeBase and HG-db (hypergraph visualization with Rust performance bridge)."
+    ],
   },
 ];
 
 export const skillGroups = [
   {
-    name: "AI / ML",
+    name: "ML / DL",
     prominence: "high",
     skills: [
       "Python",
@@ -167,15 +193,13 @@ export const skillGroups = [
     prominence: "high",
     skills: [
       "Node.js",
-      "TypeScript",
       "Express",
       "FastAPI",
       "REST APIs",
-      "Authentication",
       "PostgreSQL",
       "MongoDB",
+      "Authentication",
       "Docker",
-      "Git",
     ],
   },
   {

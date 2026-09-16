@@ -29,30 +29,30 @@ function useTypewriter(words, reduce) {
 }
 
 const Code = () => (
-  <pre className="overflow-x-auto p-5 font-mono text-[12px] leading-relaxed md:text-[13px] bg-[#FCF8F8] dark:bg-[#272822]">
-    <code className="text-[#4B3B3D] dark:text-[#FCF8F8]">
+  <pre className="max-w-full whitespace-pre-wrap p-5 font-mono text-[12px] md:text-[13px] leading-relaxed bg-[#FCF8F8] dark:bg-[#272822]">
+    <code className="text-[#4B3D3D] dark:text-[#FCF8F8]">
       <span className="text-[#9A7B82] dark:text-[#B8A0A6]">{"// building reliable AI systems"}</span>
       {"\n"}
-      <span className="text-[#C76E76] dark:text-[#F5AFAF]">const</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">negin</span> <span className="text-[#C76E76] dark:text-[#F5AFAF]">=</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">{"{"}</span>
+      <span className="text-[#C76E76] dark:text-[#F5AFAF]">const</span> <span className="text-[#4B3D3D] dark:text-[#FCF8F8]">negin</span> <span className="text-[#C76E76] dark:text-[#F5AFAF]">=</span> <span className="text-[#4B3D3D] dark:text-[#FCF8F8]">{"{"}</span>
       {"\n  "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">role</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#8B6268] dark:text-[#FBEFEF]">"AI / Backend Engineer"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">role</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#8B6268] dark:text-[#FBEFEF]">"AI / Backend Engineer"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>
       {"\n  "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">focus</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">[</span>
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"ML"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"LLM eng"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"reliable systems"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"API Design"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">],</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">focus</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#4B3D3D] dark:text-[#FCF8F8]">[</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"ML"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"LLM eng"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"reliable systems"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"API Design"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">],</span>
       {"\n  "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">stack</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">[</span>
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"Node"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"Express"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"FastAPI"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"ScikitLearn"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>{" "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"PyTorch"</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">],</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">stack</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#4B3D3D] dark:text-[#FCF8F8]">[</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"Node"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"Express"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"FastAPI"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"ScikitLearn"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>{" "}
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">"PyTorch"</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">],</span>
       {"\n  "}
-      <span className="text-[#8B6268] dark:text-[#FBEFEF]">shipping</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#8F70A5] dark:text-[#C5B3D3]">true</span><span className="text-[#4B3B3D] dark:text-[#FCF8F8]">,</span>
+      <span className="text-[#8B6268] dark:text-[#FBEFEF]">shipping</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">:</span> <span className="text-[#8F70A5] dark:text-[#C5B3D3]">true</span><span className="text-[#4B3D3D] dark:text-[#FCF8F8]">,</span>
       {"\n"}
-      <span className="text-[#4B3B3D] dark:text-[#FCF8F8]">{"};"}</span>
+      <span className="text-[#4B3D3D] dark:text-[#FCF8F8]">{"};"}</span>
     </code>
   </pre>
 );
@@ -74,16 +74,16 @@ export default function Hero() {
       {/* ambient purple glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-32 right-[-10%] h-[480px] w-[480px] rounded-full bg-[hsl(var(--violet))] opacity-[0.18] blur-[130px]"
+        className="pointer-events-none absolute -top-32 right-[-10%] h-[60%] w-[120%] md:h-[480px] md:w-[480px] rounded-full bg-[hsl(var(--violet))] opacity-[0.15] blur-[100px] md:blur-[130px]"
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-[-10%] left-[-5%] h-[380px] w-[380px] rounded-full bg-[hsl(var(--sage))] opacity-[0.12] blur-[130px]"
+        className="pointer-events-none absolute bottom-[-10%] left-[-5%] h-[60%] w-[120%] md:h-[380px] md:w-[380px] rounded-full bg-[hsl(var(--sage))] opacity-[0.12] blur-[100px] md:blur-[130px]"
       />
 
       <div className="relative z-10 mx-auto grid w-full max-w-[1200px] items-center gap-14 px-6 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
         {/* left: intro */}
-        <div>
+        <div className="min-w-0 w-full max-w-full">
           <motion.p {...fade(0)} className="font-mono text-xs uppercase tracking-[0.3em] text-sage">
             AI × Backend
           </motion.p>
@@ -140,8 +140,8 @@ export default function Hero() {
         </div>
 
         {/* right: terminal card + stats */}
-        <motion.div {...fade(0.3)} className="flex flex-col gap-8">
-          <div className="relative">
+        <motion.div {...fade(0.3)} className="flex min-w-0 w-full max-w-full flex-col gap-8">
+          <div className="relative w-full max-w-full">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute -inset-4 rounded-3xl bg-[hsl(var(--sage))] opacity-10 blur-2xl"

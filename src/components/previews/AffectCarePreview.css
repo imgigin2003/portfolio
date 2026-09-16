@@ -1,5 +1,6 @@
 .affect-care-preview {
-  height: 250px;
+  height: auto;
+  min-height: 200px;
   background: linear-gradient(150deg, #ffffff, #f4f6fc 55%);
   padding: 18px 22px;
   overflow: hidden;
@@ -145,6 +146,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .affect-care-preview .rec-btn {
   display: inline-flex;

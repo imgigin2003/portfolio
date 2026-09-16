@@ -1,4 +1,4 @@
-import { profile, about, experience, skillGroups, projects } from "@/data/portfolio";
+import { profile, about, experience, skillGroups, projects, education } from "@/data/portfolio";
 
 function Section({ title, children }) {
   return (
@@ -11,7 +11,7 @@ function Section({ title, children }) {
 
 export default function CV() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
       <div className="cv-page mx-auto max-w-[820px] px-6 py-12 md:py-16">
         <div className="flex items-start justify-between gap-6">
           <div>
@@ -23,8 +23,8 @@ export default function CV() {
               <a href={`mailto:${profile.email}`} className="transition-colors hover:text-sage">{profile.email}</a> ·{" "}
               <a href={profile.github} target="_blank" rel="noreferrer" className="transition-colors hover:text-sage">{profile.github.replace("https://", "")}</a> ·{" "}
               <a href={profile.linkedin} target="_blank" rel="noreferrer" className="transition-colors hover:text-sage">{profile.linkedin.replace("https://www.", "")}</a>
-              <span className="ml-3 rounded border border-sage/30 bg-sage/10 px-1.5 py-0.5 text-[10px] uppercase text-sage">Open to relocate</span>
             </p>
+            <span className="mt-2 inline-block rounded border border-sage/30 bg-sage/10 px-1.5 py-0.5 font-mono text-[10px] uppercase text-sage">Open to relocate</span>
           </div>
           <button
             onClick={() => window.print()}
@@ -34,8 +34,8 @@ export default function CV() {
           </button>
         </div>
 
-        <p className="mt-8 max-w-2xl font-body text-base leading-relaxed text-foreground/85">
-          {about.body}
+        <p className="mt-4 max-w-[700px] font-body text-sm leading-normal text-foreground/90 md:text-base md:leading-relaxed">
+          {about.cvSummary}
         </p>
 
         <Section title="Experience">
@@ -51,14 +51,35 @@ export default function CV() {
                 </span>
               </div>
               <p className="font-body text-sm text-muted-foreground">{e.company}</p>
-              {e.description && (
-                <p className="mt-1 font-body text-sm leading-relaxed text-foreground/80">
+              {e.description && Array.isArray(e.description) ? (
+                <ul className="mt-2 list-inside list-disc space-y-1 font-body text-sm leading-normal text-foreground/80 md:leading-relaxed">
+                  {e.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              ) : e.description ? (
+                <p className="mt-1 font-body text-sm leading-normal text-foreground/80 md:leading-relaxed">
                   {e.description}
                 </p>
-              )}
+              ) : null}
             </div>
           ))}
         </Section>
+
+        {education && education.length > 0 && (
+          <Section title="Education">
+            {education.map((edu) => (
+              <div key={edu.degree} className="mt-3">
+                <h3 className="font-display text-[15px] font-medium text-foreground">
+                  {edu.degree}
+                </h3>
+                <p className="font-body text-sm text-muted-foreground">
+                  {edu.school} · {edu.date}
+                </p>
+              </div>
+            ))}
+          </Section>
+        )}
 
         <Section title="Skills">
           {skillGroups.map((g) => (

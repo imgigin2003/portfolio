@@ -9,14 +9,27 @@ function Role({ item }) {
   const interactive = !!item.description;
 
   const row = (
-    <div className="flex w-full items-baseline justify-between gap-6 py-7 md:py-9">
-      <div>
-        <h3 className="font-display text-xl font-medium leading-tight text-foreground md:text-2xl">
-          {item.role}
-        </h3>
-        <p className="mt-1 font-body text-muted-foreground">{item.company}</p>
+    <div className="flex w-full flex-col gap-4 py-7 md:flex-row md:items-baseline md:justify-between md:gap-6 md:py-9">
+      <div className="flex w-full items-start justify-between md:w-auto">
+        <div>
+          <h3 className="font-display text-xl font-medium leading-tight text-foreground md:text-2xl">
+            {item.role}
+          </h3>
+          <p className="mt-1 font-body text-muted-foreground">{item.company}</p>
+        </div>
+        <div className="md:hidden">
+          {interactive ? (
+            <span
+              className={`block font-mono text-sage transition-transform duration-300 ${open ? "rotate-45" : ""}`}
+            >
+              +
+            </span>
+          ) : (
+            <span className="block font-mono text-border">—</span>
+          )}
+        </div>
       </div>
-      <div className="flex shrink-0 items-center gap-5">
+      <div className="flex shrink-0 items-center gap-3 md:gap-5">
         <span className="font-mono text-[11px] tracking-[0.1em] text-muted-foreground">
           {item.period}
         </span>
@@ -25,15 +38,17 @@ function Role({ item }) {
             {item.type}
           </span>
         )}
-        {interactive ? (
-          <span
-            className={`font-mono text-sage transition-transform duration-300 ${open ? "rotate-45" : ""}`}
-          >
-            +
-          </span>
-        ) : (
-          <span className="font-mono text-border">—</span>
-        )}
+        <div className="hidden md:block">
+          {interactive ? (
+            <span
+              className={`block font-mono text-sage transition-transform duration-300 ${open ? "rotate-45" : ""}`}
+            >
+              +
+            </span>
+          ) : (
+            <span className="block font-mono text-border">—</span>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -48,9 +63,17 @@ function Role({ item }) {
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="overflow-hidden"
         >
-          <p className="max-w-2xl pb-7 font-body text-base leading-relaxed text-foreground/80 md:text-lg">
-            {item.description}
-          </p>
+          <div className="max-w-2xl pb-7 font-body text-base leading-relaxed text-foreground/80 break-words md:text-lg">
+            {Array.isArray(item.description) ? (
+              <ul className="list-inside list-disc space-y-2">
+                {item.description.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{item.description}</p>
+            )}
+          </div>
         </motion.div>
       </AnimatePresence>
     ) : null;
