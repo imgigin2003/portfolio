@@ -1,8 +1,11 @@
-import './AffectCarePreview.css'
+import "./AffectCarePreview.css";
 
 export default function AffectCarePreview() {
   return (
-    <div className="affect-care-preview" aria-label="Preview of the AffectCare detection interface">
+    <div
+      className="affect-care-preview"
+      aria-label="Preview of the AffectCare detection interface"
+    >
       <div className="app-head">
         <div className="app-brand">
           <span className="diamond"></span>
@@ -21,7 +24,8 @@ export default function AffectCarePreview() {
 
       <div className="wave-panel">
         <div className="wave-label">
-          <span>LISTENING…</span><span>MFCC → CNN + LSTM</span>
+          <span>LISTENING…</span>
+          <span>MFCC → CNN + LSTM</span>
         </div>
         <div className="wave">
           {Array.from({ length: 40 }).map((_, i) => (
@@ -31,11 +35,13 @@ export default function AffectCarePreview() {
       </div>
 
       <div className="app-row">
-        <span className="rec-btn"><span className="r"></span> Record audio</span>
+        <span className="rec-btn">
+          <span className="r"></span> Record audio
+        </span>
         <span className="or">or</span>
         <span className="upload-btn">Upload .wav / .mp3</span>
-        <span className="app-footnote">RECALL 88.8% · THR 0.15</span>
+        <span className="app-footnote">RECALL 91.0% · THR 0.15</span>
       </div>
     </div>
-  )
+  );
 }

@@ -6,7 +6,8 @@ export const profile = {
   lastName: "Parseh",
   role: "AI Engineer & Backend Developer",
   roles: ["AI Engineer", "Backend Developer", "ML Engineer"],
-  thesis: "I build intelligent systems — and the backend that keeps them honest in production.",
+  thesis:
+    "I build intelligent systems — and the backend that keeps them honest in production.",
   bio: "AI engineer and backend developer focused on machine learning, LLM engineering, and reliable backend architecture.",
   email: "Negin2003Parseh@gmail.com",
   github: "https://github.com/imgigin2003",
@@ -18,7 +19,8 @@ export const about = {
   statement:
     "I started out in full-stack development, but I've naturally gravitated toward AI engineering and backend systems. I really enjoy working on the infrastructure that makes smart models actually usable.",
   body: "Most of my time is spent on machine learning, LLMs, and the backend architecture needed to run AI reliably in production. For me, a good system isn't just about high accuracy on a test set—it's about being robust under real conditions and honest about its own limits.",
-  cvSummary: "Backend Developer with 3 years of experience building production-ready systems in Python and Node.js, and 6 months of applied machine learning experience. Experienced in owning backend infrastructure from requirements through deployment. Built a FastAPI algorithm visualizer, a CNN+LSTM audio classification system achieving 88.75% recall, and a fraud detection pipeline evaluated on 284K+ real transactions. Core expertise includes Python, FastAPI, Node.js, Machine Learning, and end-to-end reliable delivery.",
+  cvSummary:
+    "Backend Developer with 3 years of experience building production-ready systems in Python and Node.js, and 6 months of applied machine learning experience. Experienced in owning backend infrastructure from requirements through deployment. Built a FastAPI algorithm visualizer, a CNN+LSTM audio classification system achieving 91.0% recall and 81.43% precision, and a fraud detection pipeline evaluated on 284K+ real transactions. Core expertise includes Python, FastAPI, Node.js, Machine Learning, and end-to-end reliable delivery.",
   interests: [
     "Machine learning",
     "Deep learning",
@@ -32,13 +34,13 @@ export const education = [
   {
     degree: "B.Sc. in Software Engineering",
     school: "Technical and Vocational University (TVU) of Kermanshah, Iran",
-    date: "November 2025"
+    date: "November 2025",
   },
   {
     degree: "Associate Degree in Computer Software Engineering",
     school: "Technical and Vocational University (TVU) of Kermanshah, Iran",
-    date: "October 2023"
-  }
+    date: "October 2023",
+  },
 ];
 
 export const projects = [
@@ -51,7 +53,11 @@ export const projects = [
     subtitle: "Vocal distress detection",
     summary:
       "CNN + LSTM audio classification system for vocal distress detection, using MFCC spectrogram features with evaluation-driven model selection.",
-    metrics: [{ value: "88.8%", label: "Recall" }],
+    metrics: [
+      { value: "91.0%", label: "Recall" },
+      { value: "81.43%", label: "Precision" },
+      { value: "85.94%", label: "F1" },
+    ],
     tech: ["PyTorch", "CNN", "LSTM", "MFCC", "Audio Classification"],
     link: "https://affectcare-extended.pages.dev/",
     github: "https://github.com/imgigin2003/AffectCare",
@@ -93,7 +99,7 @@ export const projects = [
     summary:
       "A gamified study companion that tracks mastery and streaks, growing a personal knowledge garden as you learn.",
     metrics: [],
-    tech: ["React", "TypeScript", "Node.js", "MongoDB"],
+    tech: ["React", "JavaScript", "Node.js", "MongoDB"],
     link: "https://studysprout.pages.dev",
     github: "https://github.com/imgigin2003/StudySprout",
   },
@@ -122,7 +128,7 @@ export const experience = [
     description: [
       "Designing and implementing a production-oriented AI backend with multi-provider LLM routing, automatic failover, provider health management, and quota-aware request handling.",
       "Built a provider abstraction layer supporting cloud and self-hosted models through a unified AI gateway.",
-      "Implemented idempotent request handling, structured-output validation, bounded retries, and normalized provider error handling."
+      "Implemented idempotent request handling, structured-output validation, bounded retries, and normalized provider error handling.",
     ],
   },
   {
@@ -139,10 +145,10 @@ export const experience = [
     period: "Jan 2025 — Present",
     type: "Freelance",
     description: [
-      "Developed AffectCare — a CNN+LSTM audio classification system using MFCC spectrogram features, achieving 88.75% recall and 77.6% F1 through evaluation-driven model selection.",
+      "Developed AffectCare — a CNN+LSTM audio classification system using MFCC spectrogram features, achieving 91.0% recall, 81.43% precision and 85.94% F1 through evaluation-driven model selection.",
       "Developed FraudFlux — a fraud detection pipeline on 284,807 real transactions, comparing models under severe class imbalance and selecting a deployment-oriented model based on precision/recall trade-offs.",
       "Created StudySprout and Lumen Retreat — full-stack applications featuring authentication, dashboards, CRUD workflows, and responsive production-ready interfaces.",
-      "Built InsightGraph — a full-stack algorithm visualizer using React and FastAPI with step-by-step execution, comparison mode, 16 algorithms, reusable components, and 34 automated tests."
+      "Built InsightGraph — a full-stack algorithm visualizer using React and FastAPI with step-by-step execution, comparison mode, 16 algorithms, reusable components, and 34 automated tests.",
     ],
   },
   {
@@ -154,7 +160,7 @@ export const experience = [
       "Collaborated in a fully remote environment, independently delivering software features while coordinating with teammates on data migration and cross-feature development.",
       "Owned end-to-end delivery across React frontends and Python backends from requirement clarification through testing and production deployment under real traffic.",
       "Built and maintained React interfaces and backend services with focus on performance, reusable architecture, clean APIs, and reliability.",
-      "Contributed to internal platforms including KnowledgeBase and HG-db (hypergraph visualization with Rust performance bridge)."
+      "Contributed to internal platforms including KnowledgeBase and HG-db (hypergraph visualization with Rust performance bridge).",
     ],
   },
 ];
