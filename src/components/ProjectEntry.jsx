@@ -10,7 +10,7 @@ export default function ProjectEntry({ project, flip }) {
     <article className="grid items-center gap-8 border-t border-border py-12 md:py-16 lg:grid-cols-2 lg:gap-14">
       {/* live preview in a browser window frame */}
       <div className={`group ${flip ? "lg:order-2" : ""}`}>
-        <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-xl transition-transform duration-500 group-hover:-translate-y-1">
+        <div className="transform-gpu overflow-hidden rounded-2xl border border-border bg-card shadow-xl transition-transform duration-500 group-hover:-translate-y-1">
           <div className="flex items-center gap-2 border-b border-border px-4 py-3">
             <span className="h-3 w-3 rounded-full bg-[hsl(0_84%_60%)]" />
             <span className="h-3 w-3 rounded-full bg-[hsl(38_92%_50%)]" />

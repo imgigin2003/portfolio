@@ -144,7 +144,7 @@ export default function Hero() {
           <div className="relative w-full max-w-full">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -inset-4 rounded-3xl bg-[hsl(var(--sage))] opacity-10 blur-2xl"
+              className="pointer-events-none absolute -inset-4 hidden rounded-3xl bg-[hsl(var(--sage))] opacity-10 blur-2xl md:block"
             />
             <div className="relative overflow-hidden rounded-2xl border border-border bg-[#FCF8F8] dark:bg-[#272822] shadow-2xl">
               <div className="flex items-center gap-2 border-b border-border/50 px-4 py-3">
