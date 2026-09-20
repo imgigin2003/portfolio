@@ -104,6 +104,16 @@ export default function ProjectEntry({ project, flip }) {
               GitHub repo <ArrowUpRight className="h-4 w-4" />
             </a>
           )}
+          {project.download && (
+            <a
+              href={project.download}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 font-body text-sm text-sage transition-opacity hover:opacity-70"
+            >
+              Download App <ArrowUpRight className="h-4 w-4" />
+            </a>
+          )}
         </div>
       </div>
     </article>

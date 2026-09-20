@@ -102,6 +102,7 @@ export const projects = [
     tech: ["React", "JavaScript", "Node.js", "MongoDB"],
     link: "https://studysprout.pages.dev",
     github: "https://github.com/imgigin2003/StudySprout",
+    download: "https://github.com/imgigin2003/StudySprout/releases/tag/v0.1.0",
   },
   {
     id: "insightgraph",
